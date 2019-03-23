@@ -43,6 +43,17 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone {
+          display: none;
+      }
+
+      &:first-child {
+          @media @phone {
+              display: inline;
+              width: 100%;
+          }
+      }
     }
   }
 
@@ -78,6 +89,14 @@
 
       .btn {
           .sign-up-button(@header-font-color, 2.0rem);
+
+          @media @phone {
+              width: 100%;
+          }
+      }
+
+      @media @phone {
+          width: 100%;
       }
     }
 
@@ -90,6 +109,17 @@
         height: auto;
         border-radius: 10px;
       }
+
+      @media @phone {
+          width: 100%;
+          margin-left: 0;
+      }
+    }
+
+    @media @phone {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 20px 24px;
     }
   }
 }// home
