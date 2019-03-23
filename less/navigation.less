@@ -1,1 +1,24 @@
 // Navigation code here
+.main-nav {
+    margin: 10px;
+
+    a {
+        text-decoration: none;
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin: 0 20px;
+        color: @main-font-color;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            color: @waterloo;
+        }
+    }
+}
