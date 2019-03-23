@@ -1,1 +1,24 @@
 // Mixins Here
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.sign-up-button(@background, @font-size) {
+    background: @background;
+    font-size: @font-size;
+    padding: 5px;
+    border-radius: 5px;
+    color: @wild-sand;
+    border: none;
+
+    &:hover {
+        background: @wild-sand;
+        color: @background;
+    }
+}
