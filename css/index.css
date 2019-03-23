@@ -214,6 +214,10 @@ footer {
 .home-header img {
   border-radius: 5px;
 }
+.home {
+  animation-name: fade-in;
+  animation-duration: 2s;
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -309,5 +313,13 @@ footer {
     flex-direction: column-reverse;
     align-items: center;
     padding: 20px 24px;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
